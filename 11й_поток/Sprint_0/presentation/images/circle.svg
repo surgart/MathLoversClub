@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .circle { fill: #f0fdf4; stroke: #16a34a; stroke-width: 2; }
+      .diameter { stroke: #dc2626; stroke-width: 2; stroke-dasharray: 4; }
+      .center { fill: black; }
+      .label { font-family: 'Times New Roman', serif; font-size: 18px; font-style: italic; }
+      .formula { font-family: 'Times New Roman', serif; font-size: 16px; font-weight: bold; }
+    </style>
+
+    <!-- The Circle -->
+    <circle cx="120" cy="120" r="80" class="circle" />
+
+    <!-- Diameter line -->
+    <line x1="40" y1="120" x2="200" y2="120" class="diameter" />
+
+    <!-- Center point O -->
+    <circle cx="120" cy="120" r="3" class="center" />
+    <text x="115" y="110" class="label" fill="#dc2626">O</text>
+    <text x="110" y="140" class="label" fill="#dc2626">d</text>
+    <text x="180" y="60" class="label" fill="#dc2626">l</text>
+
+    <!-- Relationship Formula -->
+    <g transform="translate(100, 50)">
+      <text x="0" y="0" class="formula">
+        <tspan x="0" dy="1em">π=l/d</tspan>
+      </text>
+    </g>
+  </svg>

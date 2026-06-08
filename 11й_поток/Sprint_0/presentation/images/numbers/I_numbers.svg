@@ -1,0 +1,49 @@
+<svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- ЗК: зеленый круг с черной границей -->
+        <circle id="zk" r="3" fill="#2ecc71" stroke="black" stroke-width="0.5" />
+        <!-- Крестик -->
+        <g id="cross">
+            <line x1="-3" y1="-3" x2="3" y2="3" stroke="black" stroke-width="1" />
+            <line x1="3" y1="-3" x2="-3" y2="3" stroke="black" stroke-width="1" />
+        </g>
+        <!-- Черная вертикальная ризка для оси R -->
+        <line id="tick" x1="0" y1="-6" x2="0" y2="6" stroke="black" stroke-width="1.2" />
+    </defs>
+    <style>
+        .axis-line { stroke: black; stroke-width: 2; fill: none; }
+        .r-line-bg { stroke: #2ecc71; stroke-width: 4; fill: none; }
+        .r-line-border { stroke: black; stroke-width: 0.5; fill: none; }
+        .label { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; fill: black; }
+        .axis-name { font-family: "Times New Roman", serif; font-size: 24px; font-weight: bold; fill: black; }
+    </style>
+<!---->
+    <!-- 4. Ось I -->
+    <g transform="translate(0, 60)">
+        <line x1="20" y1="0" x2="500" y2="0" class="axis-line" />
+        <path d="M 490 -5 L 500 0 L 490 5" class="axis-line" />
+        <text x="530" y="7" class="axis-name">𝕀</text>
+        <!-- Z, Q as Crosses -->
+        <use href="#cross" x="50" y="0"/><use href="#cross" x="250" y="0"/><use href="#cross" x="263" y="0"/><use href="#cross" x="310" y="0"/>
+        <!-- I numbers -->
+        <g transform="translate(141,0)"><use href="#zk"/><text y="-12" class="label">-e</text></g>
+        <g transform="translate(359,0)"><use href="#zk"/><text y="-12" class="label">e</text></g>
+        <g transform="translate(124,0)"><use href="#zk"/><text y="-12" class="label">-π</text></g>
+        <g transform="translate(376,0)"><use href="#zk"/><text y="-12" class="label">π</text></g>
+        <g transform="translate(307,0)"><use href="#zk"/><text y="-12" class="label">√2</text></g>
+        <g transform="translate(161,0)"><use href="#zk"/><text y="-12" class="label">-√5</text></g>
+        <g transform="translate(144,0)"><use href="#zk"/><text y="-25" class="label">-√7</text></g>
+
+        <g transform="translate(50,0)"><use href="#cross"/><text y="25" class="label">-5</text></g>
+        <g transform="translate(90,0)"><use href="#cross"/><text y="25" class="label">-4</text></g>
+        <g transform="translate(130,0)"><use href="#cross"/><text y="25" class="label">-3</text></g>
+        <g transform="translate(170,0)"><use href="#cross"/><text y="25" class="label">-2</text></g>
+        <g transform="translate(210,0)"><use href="#cross"/><text y="25" class="label">-1</text></g>
+        <g transform="translate(250,0)"><use href="#cross"/><text y="25" class="label">0</text></g>
+        <g transform="translate(290,0)"><use href="#cross"/><text y="25" class="label">1</text></g>
+        <g transform="translate(330,0)"><use href="#cross"/><text y="25" class="label">2</text></g>
+        <g transform="translate(370,0)"><use href="#cross"/><text y="25" class="label">3</text></g>
+        <g transform="translate(410,0)"><use href="#cross"/><text y="25" class="label">4</text></g>
+        <g transform="translate(450,0)"><use href="#cross"/><text y="25" class="label">5</text></g>
+    </g>
+</svg>

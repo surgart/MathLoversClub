@@ -1,0 +1,150 @@
+<svg viewBox="0 0 600 720" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- ЗК: зеленый круг с черной границей -->
+        <circle id="zk" r="3" fill="#2ecc71" stroke="black" stroke-width="0.5" />
+        <!-- Крестик -->
+        <g id="cross">
+            <line x1="-3" y1="-3" x2="3" y2="3" stroke="black" stroke-width="1" />
+            <line x1="3" y1="-3" x2="-3" y2="3" stroke="black" stroke-width="1" />
+        </g>
+        <!-- Черная вертикальная ризка для оси R -->
+        <line id="tick" x1="0" y1="-6" x2="0" y2="6" stroke="black" stroke-width="1.2" />
+    </defs>
+    <style>
+        .axis-line { stroke: black; stroke-width: 2; fill: none; }
+        .r-line-bg { stroke: #2ecc71; stroke-width: 4; fill: none; }
+        .r-line-border { stroke: black; stroke-width: 0.5; fill: none; }
+        .label { font-family: Arial, sans-serif; font-size: 14px; text-anchor: middle; fill: black; }
+        .axis-name { font-family: "Times New Roman", serif; font-size: 24px; font-weight: bold; fill: black; }
+    </style>
+
+    <!-- 1. Ось N -->
+    <g transform="translate(0, 60)">
+        <line x1="20" y1="0" x2="500" y2="0" class="axis-line" />
+        <path d="M 490 -5 L 500 0 L 490 5" class="axis-line" />
+        <text x="530" y="7" class="axis-name">ℕ</text>
+        <!-- Z: -5 to 0 (Cross), 1 to 5 (ZK) -->
+        <g transform="translate(50,0)"><use href="#cross"/><text y="25" class="label">-5</text></g>
+        <g transform="translate(90,0)"><use href="#cross"/><text y="25" class="label">-4</text></g>
+        <g transform="translate(130,0)"><use href="#cross"/><text y="25" class="label">-3</text></g>
+        <g transform="translate(170,0)"><use href="#cross"/><text y="25" class="label">-2</text></g>
+        <g transform="translate(210,0)"><use href="#cross"/><text y="25" class="label">-1</text></g>
+        <g transform="translate(250,0)"><use href="#cross"/><text y="25" class="label">0</text></g>
+        <g transform="translate(290,0)"><use href="#zk"/><text y="25" class="label">1</text></g>
+        <g transform="translate(330,0)"><use href="#zk"/><text y="25" class="label">2</text></g>
+        <g transform="translate(370,0)"><use href="#zk"/><text y="25" class="label">3</text></g>
+        <g transform="translate(410,0)"><use href="#zk"/><text y="25" class="label">4</text></g>
+        <g transform="translate(450,0)"><use href="#zk"/><text y="25" class="label">5</text></g>
+    </g>
+
+    <!-- 2. Ось Z (Distance 120px) -->
+    <g transform="translate(0, 180)">
+        <line x1="20" y1="0" x2="500" y2="0" class="axis-line" />
+        <path d="M 490 -5 L 500 0 L 490 5" class="axis-line" />
+        <text x="530" y="7" class="axis-name">ℤ</text>
+        <!-- All Z as ZK -->
+        <g transform="translate(50,0)"><use href="#zk"/><text y="25" class="label">-5</text></g>
+        <g transform="translate(90,0)"><use href="#zk"/><text y="25" class="label">-4</text></g>
+        <g transform="translate(130,0)"><use href="#zk"/><text y="25" class="label">-3</text></g>
+        <g transform="translate(170,0)"><use href="#zk"/><text y="25" class="label">-2</text></g>
+        <g transform="translate(210,0)"><use href="#zk"/><text y="25" class="label">-1</text></g>
+        <g transform="translate(250,0)"><use href="#zk"/><text y="25" class="label">0</text></g>
+        <g transform="translate(290,0)"><use href="#zk"/><text y="25" class="label">1</text></g>
+        <g transform="translate(330,0)"><use href="#zk"/><text y="25" class="label">2</text></g>
+        <g transform="translate(370,0)"><use href="#zk"/><text y="25" class="label">3</text></g>
+        <g transform="translate(410,0)"><use href="#zk"/><text y="25" class="label">4</text></g>
+        <g transform="translate(450,0)"><use href="#zk"/><text y="25" class="label">5</text></g>
+    </g>
+
+    <!-- 3. Ось Q -->
+    <g transform="translate(0, 300)">
+        <line x1="20" y1="0" x2="500" y2="0" class="axis-line" />
+        <path d="M 490 -5 L 500 0 L 490 5" class="axis-line" />
+        <text x="530" y="7" class="axis-name">ℚ</text>
+        <!-- Z numbers -->
+        <use href="#zk" x="50" y="0"/><use href="#zk" x="130" y="0"/><use href="#zk" x="250" y="0"/><use href="#zk" x="450" y="0"/>
+        <!-- Q numbers (approx positions) -->
+        <g transform="translate(94,0)"><use href="#zk"/><text y="-12" class="label">-3.9</text></g>
+        <g transform="translate(103,0)"><use href="#zk"/><text y="-25" class="label">-11/3</text></g>
+        <g transform="translate(205,0)"><use href="#zk"/><text y="-12" class="label">-1.(13)</text></g>
+        <g transform="translate(263,0)"><use href="#zk"/><text y="-12" class="label">0.(3)</text></g>
+        <g transform="translate(310,0)"><use href="#zk"/><text y="-12" class="label">1.5</text></g>
+        <g transform="translate(398,0)"><use href="#zk"/><text y="-12" class="label">3.7</text></g>
+        <g transform="translate(426,0)"><use href="#zk"/><text y="-12" class="label">4.4</text></g>
+
+        <g transform="translate(50,0)"><use href="#zk"/><text y="25" class="label">-5</text></g>
+        <g transform="translate(90,0)"><use href="#zk"/><text y="25" class="label">-4</text></g>
+        <g transform="translate(130,0)"><use href="#zk"/><text y="25" class="label">-3</text></g>
+        <g transform="translate(170,0)"><use href="#zk"/><text y="25" class="label">-2</text></g>
+        <g transform="translate(210,0)"><use href="#zk"/><text y="25" class="label">-1</text></g>
+        <g transform="translate(250,0)"><use href="#zk"/><text y="25" class="label">0</text></g>
+        <g transform="translate(290,0)"><use href="#zk"/><text y="25" class="label">1</text></g>
+        <g transform="translate(330,0)"><use href="#zk"/><text y="25" class="label">2</text></g>
+        <g transform="translate(370,0)"><use href="#zk"/><text y="25" class="label">3</text></g>
+        <g transform="translate(410,0)"><use href="#zk"/><text y="25" class="label">4</text></g>
+        <g transform="translate(450,0)"><use href="#zk"/><text y="25" class="label">5</text></g>
+    </g>
+
+    <!-- 4. Ось I -->
+    <g transform="translate(0, 420)">
+        <line x1="20" y1="0" x2="500" y2="0" class="axis-line" />
+        <path d="M 490 -5 L 500 0 L 490 5" class="axis-line" />
+        <text x="530" y="7" class="axis-name">𝕀</text>
+        <!-- Z, Q as Crosses -->
+        <use href="#cross" x="50" y="0"/><use href="#cross" x="250" y="0"/><use href="#cross" x="263" y="0"/><use href="#cross" x="310" y="0"/>
+        <!-- I numbers -->
+        <g transform="translate(141,0)"><use href="#zk"/><text y="-12" class="label">-e</text></g>
+        <g transform="translate(359,0)"><use href="#zk"/><text y="-12" class="label">e</text></g>
+        <g transform="translate(124,0)"><use href="#zk"/><text y="-12" class="label">-π</text></g>
+        <g transform="translate(376,0)"><use href="#zk"/><text y="-12" class="label">π</text></g>
+        <g transform="translate(307,0)"><use href="#zk"/><text y="-12" class="label">√2</text></g>
+        <g transform="translate(161,0)"><use href="#zk"/><text y="-12" class="label">-√5</text></g>
+        <g transform="translate(144,0)"><use href="#zk"/><text y="-25" class="label">-√7</text></g>
+
+        <g transform="translate(50,0)"><use href="#zk"/><text y="25" class="label">-5</text></g>
+        <g transform="translate(90,0)"><use href="#zk"/><text y="25" class="label">-4</text></g>
+        <g transform="translate(130,0)"><use href="#zk"/><text y="25" class="label">-3</text></g>
+        <g transform="translate(170,0)"><use href="#zk"/><text y="25" class="label">-2</text></g>
+        <g transform="translate(210,0)"><use href="#zk"/><text y="25" class="label">-1</text></g>
+        <g transform="translate(250,0)"><use href="#zk"/><text y="25" class="label">0</text></g>
+        <g transform="translate(290,0)"><use href="#zk"/><text y="25" class="label">1</text></g>
+        <g transform="translate(330,0)"><use href="#zk"/><text y="25" class="label">2</text></g>
+        <g transform="translate(370,0)"><use href="#zk"/><text y="25" class="label">3</text></g>
+        <g transform="translate(410,0)"><use href="#zk"/><text y="25" class="label">4</text></g>
+        <g transform="translate(450,0)"><use href="#zk"/><text y="25" class="label">5</text></g>
+    </g>
+
+    <!-- 5. Ось R -->
+    <g transform="translate(0, 560)">
+        <!-- Green line with black borders -->
+        <line x1="20" y1="0" x2="500" y2="0" class="r-line-bg" />
+        <line x1="20" y1="-2" x2="500" y2="-2" class="r-line-border" />
+        <line x1="20" y1="2" x2="500" y2="2" class="r-line-border" />
+        <!-- Arrowhead: Green fill, black border -->
+        <path d="M 495 -5 L 505 0 L 495 5 Z" fill="#2ecc71" stroke="black" stroke-width="0.5" />
+        <text x="530" y="7" class="axis-name">ℝ</text>
+
+        <!-- Ticks and labels -->
+        <!-- Integers (Bottom) -->
+        <g transform="translate(50,0)"><use href="#tick"/><text y="25" class="label">-5</text></g>
+        <g transform="translate(90,0)"><use href="#tick"/><text y="25" class="label">-4</text></g>
+        <g transform="translate(130,0)"><use href="#tick"/><text y="25" class="label">-3</text></g>
+        <g transform="translate(170,0)"><use href="#tick"/><text y="25" class="label">-2</text></g>
+        <g transform="translate(210,0)"><use href="#tick"/><text y="25" class="label">-1</text></g>
+        <g transform="translate(250,0)"><use href="#tick"/><text y="25" class="label">0</text></g>
+        <g transform="translate(290,0)"><use href="#tick"/><text y="25" class="label">1</text></g>
+        <g transform="translate(330,0)"><use href="#tick"/><text y="25" class="label">2</text></g>
+        <g transform="translate(370,0)"><use href="#tick"/><text y="25" class="label">3</text></g>
+        <g transform="translate(410,0)"><use href="#tick"/><text y="25" class="label">4</text></g>
+        <g transform="translate(450,0)"><use href="#tick"/><text y="25" class="label">5</text></g>
+
+        <!-- Rational/Irrational (Top) -->
+        <g><use href="#tick" x="94"/><text x="94" y="-12" class="label">-3.9</text></g>
+        <g><use href="#tick" x="124"/><text x="124" y="-24" class="label">-π</text></g>
+        <g><use href="#tick" x="205"/><text x="205" y="-12" class="label">-1.(13)</text></g>
+        <g><use href="#tick" x="263"/><text x="263" y="-12" class="label">0.(3)</text></g>
+        <g><use href="#tick" x="307"/><text x="307" y="-12" class="label">√2</text></g>
+        <g><use href="#tick" x="359"/><text x="359" y="-12" class="label">e</text></g>
+        <g><use href="#tick" x="376"/><text x="376" y="-24" class="label">π</text></g>
+    </g>
+</svg>

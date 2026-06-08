@@ -1,0 +1,36 @@
+% Компилировать с помощью: pdflatex, xelatex или lualatex
+\documentclass[8pt, aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{multirow}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\begin{document}
+
+\begin{frame}
+    $$
+    \begin{array}{r|l}
+        525 & 231 \\ \cline{2-2}
+        462 & 2 \\ \cline{1-1}
+        231 & 63 \\ \cline{2-2}
+        189 & 3 \\ \cline{1-1}
+        63 & 42 \\ \cline{2-2}
+        42 & 1 \\ \cline{1-1}
+        42 & 21 \\ \cline{2-2}
+        42 & 2 \\ \cline{1-1}
+        0 &
+    \end{array}
+    $$
+\end{frame}
+
+\end{document}

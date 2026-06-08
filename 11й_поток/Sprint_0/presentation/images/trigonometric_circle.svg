@@ -1,0 +1,65 @@
+<svg width="450" height="450" viewBox="-160 -160 320 320" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Стрелки для осей и дуг -->
+      <marker id="axis-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#666" />
+      </marker>
+      <marker id="arc-arrow-blue" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="blue" />
+      </marker>
+      <marker id="arc-arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="red" />
+      </marker>
+      <marker id="vector-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="black" />
+      </marker>
+    </defs>
+
+    <!-- Оси координат -->
+    <line x1="-140" y1="0" x2="145" y2="0" stroke="#666" stroke-width="1" marker-end="url(#axis-arrow)" />
+    <line x1="0" y1="140" x2="0" y2="-145" stroke="#666" stroke-width="1" marker-end="url(#axis-arrow)" />
+
+    <!-- Подписи осей -->
+    <text x="130" y="15" font-family="Arial" font-size="12" fill="black">cos</text>
+    <text x="10" y="-145" font-family="Arial" font-size="12" fill="black">sin</text>
+
+    <!-- Тригонометрическая окружность -->
+    <circle cx="0" cy="0" r="100" stroke="green" stroke-width="2" fill="none" />
+
+    <!-- Числовые подписи пересечений (внутри окружности) -->
+    <text x="85" y="15" font-family="Arial" font-size="11" fill="#666">1</text>
+    <text x="-95" y="15" font-family="Arial" font-size="11" fill="#666">-1</text>
+    <text x="5" y="-85" font-family="Arial" font-size="11" fill="#666">1</text>
+    <text x="5" y="95" font-family="Arial" font-size="11" fill="#666">-1</text>
+
+    <!-- Точки O, A, C -->
+    <circle cx="0" cy="0" r="3" fill="black" />
+    <text x="-15" y="15" font-family="Arial" font-size="14" font-weight="bold">O</text>
+
+    <circle cx="100" cy="0" r="3" fill="black" />
+    <text x="105" y="18" font-family="Arial" font-size="14" font-weight="bold">A</text>
+
+    <circle cx="-100" cy="0" r="3" fill="black" />
+    <text x="-120" y="18" font-family="Arial" font-size="14" font-weight="bold">C</text>
+    <text x="-135" y="-10" font-family="Arial" font-size="14" fill="blue" font-weight="bold">π</text>
+
+    <!-- Синяя дуга от A до C (π) -->
+    <path d="M 100,0 A 100,100 0 0,0 -100,0" stroke="blue" stroke-width="2" fill="none" marker-end="url(#arc-arrow-blue)" />
+
+    <!-- Составная дуга от A до B (Красная подложка + синяя нить) -->
+    <path d="M 100,0 A 100,100 0 0,0 70.7,-70.7" stroke="red" stroke-width="5" fill="none" />
+    <path d="M 100,0 A 100,100 0 0,0 70.7,-70.7" stroke="blue" stroke-width="1" fill="none" marker-end="url(#arc-arrow-red)" />
+    <text x="85" y="-85" font-family="Arial" font-size="12" fill="red" font-weight="bold">π/4</text>
+
+    <!-- Точка B (π/4) -->
+    <circle cx="70.7" cy="-70.7" r="4" fill="black" />
+    <text x="60" y="-85" font-family="Arial" font-size="14" font-weight="bold">B</text>
+
+    <!-- Вектор OB -->
+    <line x1="0" y1="0" x2="67" y2="-67" stroke="black" stroke-width="1.5" marker-end="url(#vector-arrow)" />
+
+    <!-- Угловая разметка (45 градусов) -->
+    <circle cx="0" cy="0" r="35" stroke="orange" stroke-width="1" stroke-dasharray="4" fill="none" opacity="0.6" />
+    <path d="M 35,0 A 35,35 0 0,0 24.75,-24.75" stroke="orange" stroke-width="2" fill="none" />
+    <text x="38" y="-20" font-family="Arial" font-size="11" fill="orange" font-weight="bold">45°</text>
+  </svg>

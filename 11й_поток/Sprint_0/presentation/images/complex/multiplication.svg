@@ -1,0 +1,33 @@
+<svg width="500" height="500" viewBox="-100 -450 450 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 Z" fill="context-stroke" />
+      </marker>
+    </defs>
+
+    <!-- Сетка (1 единица = 40px для компактности) -->
+    <path d="M -100,-400 L 350,-400 M -100,-320 L 350,-320 M -100,-240 L 350,-240 M -100,-160 L 350,-160 M -100,-80 L 350,-80 M -100,0 L 350,0
+             M 0,-450 L 0,50 M 80,-450 L 80,50 M 160,-450 L 160,50 M 240,-450 L 240,50 M 320,-450 L 320,50" stroke="#f0f0f0" stroke-width="1" />
+
+    <!-- Оси координат -->
+    <line x1="-80" y1="0" x2="340" y2="0" stroke="#666" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="0" y1="40" x2="0" y2="-440" stroke="#666" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="325" y="20" font-family="Arial" font-size="14" fill="#666">Re</text>
+    <text x="10" y="-425" font-family="Arial" font-size="14" fill="#666">Im</text>
+
+    <!-- Вектор z1 = 1 + 3i -->
+    <line x1="0" y1="0" x2="40" y2="-120" stroke="blue" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="45" y="-125" font-family="Arial" font-size="14" fill="blue" font-weight="bold">z₁=1+3i</text>
+
+    <!-- Вектор z2 = 3 - i -->
+    <line x1="0" y1="0" x2="120" y2="40" stroke="orange" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="125" y="45" font-family="Arial" font-size="14" fill="orange" font-weight="bold">z₂=3-i</text>
+
+    <!-- Вектор z3 = z1 * z2 = 6 + 8i -->
+    <line x1="0" y1="0" x2="240" y2="-320" stroke="red" stroke-width="4" marker-end="url(#arrow)" />
+    <circle cx="240" cy="-320" r="4" fill="red" />
+    <text x="250" y="-330" font-family="Arial" font-size="16" fill="red" font-weight="bold">z₃ = z₁·z₂ = 6+8i</text>
+
+    <!-- Точка начала координат -->
+    <circle cx="0" cy="0" r="3" fill="black" />
+</svg>

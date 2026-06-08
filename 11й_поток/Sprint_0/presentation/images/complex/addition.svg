@@ -1,0 +1,36 @@
+<svg width="450" height="450" viewBox="-50 -360 480 510" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 Z" fill="context-stroke" />
+      </marker>
+    </defs>
+
+    <!-- Сетка -->
+    <path d="M -50,-300 L 400,-300 M -50,-200 L 400,-200 M -50,-100 L 400,-100 M -50,0 L 400,0 M -50,100 L 400,100 M 0,-350 L 0,150 M 100,-350 L 100,150 M 200,-350 L 200,150 M 300,-350 L 300,150 M 400,-350 L 400,150" stroke="#eee" stroke-width="1" />
+
+    <!-- Оси (масштаб: 1 единица = 100px) -->
+    <line x1="-50" y1="0" x2="430" y2="0" stroke="#666" stroke-width="2" marker-end="url(#arrow)" />
+    <line x1="0" y1="140" x2="0" y2="-350" stroke="#666" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="410" y="20" font-family="Arial" font-size="14" fill="#666">Re</text>
+    <text x="10" y="-335" font-family="Arial" font-size="14" fill="#666">Im</text>
+
+    <!-- Вспомогательные линии (параллелограмм) -->
+    <line x1="100" y1="-300" x2="400" y2="-200" stroke="#ccc" stroke-dasharray="5,5" />
+    <line x1="300" y1="100" x2="400" y2="-200" stroke="#ccc" stroke-dasharray="5,5" />
+
+    <!-- Вектор z1 = 1 + 3i -->
+    <line x1="0" y1="0" x2="100" y2="-300" stroke="blue" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="50" y="-310" font-family="Arial" font-size="14" fill="blue" font-weight="bold">z₁=1+3i</text>
+
+    <!-- Вектор z2 = 3 - i -->
+    <line x1="0" y1="0" x2="300" y2="100" stroke="orange" stroke-width="3" marker-end="url(#arrow)" />
+    <text x="240" y="125" font-family="Arial" font-size="14" fill="orange" font-weight="bold">z₂=3-i</text>
+
+    <!-- Итоговый вектор z3 = 4 + 2i -->
+    <line x1="0" y1="0" x2="400" y2="-200" stroke="red" stroke-width="4" marker-end="url(#arrow)" />
+    <circle cx="400" cy="-200" r="4" fill="red" />
+    <text x="350" y="-220" font-family="Arial" font-size="16" fill="red" font-weight="bold">z₃=4+2i</text>
+
+    <!-- Точка начала координат -->
+    <circle cx="0" cy="0" r="3" fill="black" />
+</svg>

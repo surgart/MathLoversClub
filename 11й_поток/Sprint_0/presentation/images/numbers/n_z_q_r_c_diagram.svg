@@ -1,0 +1,52 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .boundary { stroke: black; stroke-width: 2; fill: none; }
+      .irrational-area { fill: #f9f9f9; stroke: black; stroke-width: 2; }
+      .label { font-family: "Times New Roman", serif; font-size: 24px; font-weight: bold; }
+      .point-text { font-family: Arial, sans-serif; font-size: 14px; }
+      .dot { fill: black; }
+    </style>
+
+    <!-- R (Real Numbers) with I (Irrational) shading -->
+    <ellipse cx="300" cy="250" rx="280" ry="220" class="irrational-area" />
+
+    <!-- Q (Rational Numbers) -->
+    <ellipse cx="260" cy="280" rx="200" ry="160" class="boundary" fill="white" />
+
+    <!-- Z (Integers) -->
+    <ellipse cx="220" cy="310" rx="130" ry="100" class="boundary" />
+
+    <!-- N (Natural Numbers) -->
+    <ellipse cx="180" cy="340" rx="70" ry="50" class="boundary" />
+
+    <!-- Диагональные подписи (выровнены по линии x=y) -->
+    <text x="180" y="348" class="label" text-anchor="middle">ℕ</text>
+    <text x="260" y="288" class="label" text-anchor="middle">ℤ</text>
+    <text x="340" y="228" class="label" text-anchor="middle">ℚ</text>
+    <text x="420" y="168" class="label" text-anchor="middle">𝕀</text>
+    <text x="500" y="108" class="label" text-anchor="middle">ℝ</text>
+
+    <!-- Числа для N -->
+    <circle cx="140" cy="330" r="2" class="dot" /> <text x="145" y="335" class="point-text">1</text>
+    <circle cx="160" cy="360" r="2" class="dot" /> <text x="165" y="365" class="point-text">6</text>
+    <circle cx="200" cy="335" r="2" class="dot" /> <text x="205" y="340" class="point-text">10</text>
+    <circle cx="180" cy="370" r="2" class="dot" /> <text x="185" y="375" class="point-text">2/2</text>
+
+    <!-- Числа для Z -->
+    <circle cx="120" cy="270" r="2" class="dot" /> <text x="125" y="275" class="point-text">0</text>
+    <circle cx="280" cy="350" r="2" class="dot" /> <text x="285" y="355" class="point-text">-3</text>
+    <circle cx="150" cy="240" r="2" class="dot" /> <text x="155" y="245" class="point-text">-31</text>
+    <circle cx="230" cy="390" r="2" class="dot" /> <text x="235" y="395" class="point-text">-117</text>
+    <circle cx="110" cy="320" r="2" class="dot" /> <text x="115" y="325" class="point-text">-4/4</text>
+
+    <!-- Числа для Q -->
+    <circle cx="350" cy="320" r="2" class="dot" /> <text x="355" y="325" class="point-text">-3/4</text>
+    <circle cx="100" cy="200" r="2" class="dot" /> <text x="105" y="205" class="point-text">1/2</text>
+    <circle cx="260" cy="150" r="2" class="dot" /> <text x="265" y="155" class="point-text">13/5</text>
+
+    <!-- Числа для I -->
+    <circle cx="450" cy="300" r="2" class="dot" /> <text x="455" y="305" class="point-text">-√3</text>
+    <circle cx="500" cy="240" r="2" class="dot" /> <text x="505" y="245" class="point-text">√2</text>
+    <circle cx="400" cy="380" r="2" class="dot" /> <text x="405" y="385" class="point-text">π</text>
+    <circle cx="100" cy="100" r="2" class="dot" /> <text x="105" y="105" class="point-text">e</text>
+  </svg>

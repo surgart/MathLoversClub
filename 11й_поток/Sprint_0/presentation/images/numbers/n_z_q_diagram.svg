@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .set-boundary { stroke: black; stroke-width: 2; fill: none; }
+      .label { font-family: "Times New Roman", serif; font-size: 24px; font-weight: bold; }
+    </style>
+
+    <!-- Множество Q (внешнее) -->
+    <ellipse cx="200" cy="150" rx="180" ry="130" class="set-boundary" />
+    <text x="300" y="80" class="label">ℚ</text>
+
+    <!-- Множество Z (среднее) -->
+    <ellipse cx="180" cy="165" rx="130" ry="90" class="set-boundary" />
+    <text x="240" y="130" class="label">ℤ</text>
+
+    <!-- Множество N (внутреннее) -->
+    <ellipse cx="160" cy="180" rx="80" ry="50" class="set-boundary" />
+    <text x="180" y="185" class="label">ℕ</text>
+
+    <!-- Текстовое описание вложенности снизу -->
+    <text x="200" y="310" font-family="Arial" font-size="18" text-anchor="middle">
+      ℕ ⊂ ℤ ⊂ ℚ
+    </text>
+</svg>

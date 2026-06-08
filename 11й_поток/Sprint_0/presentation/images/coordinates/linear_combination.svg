@@ -1,0 +1,74 @@
+<svg width="550" height="550" viewBox="-180 -350 520 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- Маркеры стрелок -->
+      <marker id="axis-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#666" />
+      </marker>
+      <marker id="arrow-black" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="black" />
+      </marker>
+      <marker id="arrow-blue" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="blue" />
+      </marker>
+      <marker id="arrow-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="red" />
+      </marker>
+      <marker id="arrow-orange" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="orange" />
+      </marker>
+    </defs>
+
+    <!-- Оси координат -->
+    <line x1="-140" y1="0" x2="320" y2="0" stroke="#666" stroke-width="1" marker-end="url(#axis-arrow)" />
+    <line x1="0" y1="130" x2="0" y2="-320" stroke="#666" stroke-width="1" marker-end="url(#axis-arrow)" />
+    <text x="300" y="15" font-family="Arial" font-size="14" fill="#666" font-weight="bold">cos</text>
+    <text x="10" y="-325" font-family="Arial" font-size="14" fill="#666" font-weight="bold">sin</text>
+
+    <!-- 1. Тригонометрическая окружность -->
+    <circle cx="0" cy="0" r="100" stroke="green" stroke-width="2" fill="none" />
+
+    <!-- 2. Числа внутри окружности -->
+    <text x="80" y="18" font-family="Arial" font-size="11" fill="#666">1</text>
+    <text x="-95" y="18" font-family="Arial" font-size="11" fill="#666">-1</text>
+    <text x="5" y="-82" font-family="Arial" font-size="11" fill="#666">1</text>
+    <text x="5" y="95" font-family="Arial" font-size="11" fill="#666">-1</text>
+
+    <!-- 4 & 6. Векторы OA' и OB' (синие) и подписи "2" -->
+    <line x1="0" y1="0" x2="195" y2="0" stroke="blue" stroke-width="2" marker-end="url(#arrow-blue)" />
+    <line x1="0" y1="0" x2="0" y2="-195" stroke="blue" stroke-width="2" marker-end="url(#arrow-blue)" />
+    <text x="210" y="18" font-family="Arial" font-size="12" fill="blue" font-weight="bold">A'</text>
+    <text x="190" y="18" font-family="Arial" font-size="11" fill="#666">2</text>
+    <text x="5" y="-215" font-family="Arial" font-size="12" fill="blue" font-weight="bold">B'</text>
+    <text x="5" y="-190" font-family="Arial" font-size="11" fill="#666">2</text>
+
+    <!-- 7. Вектор суммы OC' (красный) и перпендикуляры из C' -->
+    <line x1="0" y1="0" x2="196" y2="-196" stroke="red" stroke-width="2" marker-end="url(#arrow-red)" />
+    <line x1="200" y1="0" x2="200" y2="-200" stroke="gray" stroke-dasharray="4" />
+    <line x1="0" y1="-200" x2="200" y2="-200" stroke="gray" stroke-dasharray="4" />
+    <text x="205" y="-205" font-family="Arial" font-size="14" font-weight="bold" fill="red">C'</text>
+
+    <!-- 8 & 9. Вектор OC (единичный), точка C за окружностью и угол -->
+    <line x1="0" y1="0" x2="68" y2="-68" stroke="orange" stroke-width="3" marker-end="url(#arrow-orange)" />
+    <circle cx="70.7" cy="-70.7" r="3" fill="black" />
+    <text x="75" y="-75" font-family="Arial" font-size="12" font-weight="bold">C</text>
+    <path d="M 45,0 A 45,45 0 0,0 31.8,-31.8" stroke="orange" stroke-width="2" fill="none" />
+    <text x="50" y="-30" font-family="Arial" font-size="12" fill="orange" font-weight="bold">π/4</text>
+
+    <!-- 10. Перпендикуляры из C и подписи sin(φ)/cos(φ) -->
+    <line x1="70.7" y1="0" x2="70.7" y2="-70.7" stroke="orange" stroke-dasharray="2" />
+    <line x1="0" y1="-70.7" x2="70.7" y2="-70.7" stroke="orange" stroke-dasharray="2" />
+    <text x="52" y="18" font-family="Arial" font-size="11" fill="orange">cos(φ)</text>
+    <text x="-45" y="-67" font-family="Arial" font-size="11" fill="orange">sin(φ)</text>
+
+    <!-- 11. Векторы проекций от O до sin(φ) и cos(φ) -->
+    <line x1="0" y1="0" x2="70" y2="0" stroke="orange" stroke-width="2" marker-end="url(#arrow-orange)" />
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="orange" stroke-width="2" marker-end="url(#arrow-orange)" />
+
+    <!-- 5. Векторы OA и OB поверх всего -->
+    <line x1="0" y1="0" x2="95" y2="0" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+    <line x1="0" y1="0" x2="0" y2="-95" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+    <circle cx="0" cy="0" r="3" fill="black" />
+    <text x="-15" y="15" font-family="Arial" font-size="14" font-weight="bold">O</text>
+    <text x="105" y="18" font-family="Arial" font-size="12">A</text>
+    <text x="5" y="-105" font-family="Arial" font-size="12">B</text>
+  </svg>
